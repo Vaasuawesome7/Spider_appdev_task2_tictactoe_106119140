@@ -8,6 +8,15 @@
     android:foreground="@android:color/transparent"
     tools:context=".singleplayer">
 
+    <com.example.tictactoe.game_layout.Single_TTT
+        android:id="@+id/single_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/player2"
         android:layout_width="wrap_content"
@@ -36,162 +45,6 @@
         app:srcCompat="@drawable/computer" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="495dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677"
-        app:srcCompat="@drawable/bg" />
-
-    <Button
-        android:id="@+id/sbutton_00"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@android:color/transparent"
-        android:foreground="@android:color/transparent"
-        android:onClick="tictactoe"
-        android:textColor="@color/ic_launcher_background"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
-
-    <Button
-        android:id="@+id/sbutton_01"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@android:color/transparent"
-        android:foreground="@android:color/transparent"
-        android:onClick="tictactoe"
-        android:textColor="@color/ic_launcher_background"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
-
-    <Button
-        android:id="@+id/sbutton_02"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@android:color/transparent"
-        android:foreground="@android:color/transparent"
-        android:onClick="tictactoe"
-        android:textColor="@color/ic_launcher_background"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
-
-    <Button
-        android:id="@+id/sbutton_10"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@android:color/transparent"
-        android:foreground="@android:color/transparent"
-        android:onClick="tictactoe"
-        android:textColor="@color/ic_launcher_background"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
-
-    <Button
-        android:id="@+id/sbutton_11"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@android:color/transparent"
-        android:foreground="@android:color/transparent"
-        android:onClick="tictactoe"
-        android:textColor="@color/ic_launcher_background"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
-
-    <Button
-        android:id="@+id/sbutton_12"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@android:color/transparent"
-        android:foreground="@android:color/transparent"
-        android:onClick="tictactoe"
-        android:textColor="@color/ic_launcher_background"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
-
-    <Button
-        android:id="@+id/sbutton_20"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@android:color/transparent"
-        android:foreground="@android:color/transparent"
-        android:onClick="tictactoe"
-        android:textColor="@color/ic_launcher_background"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
-
-    <Button
-        android:id="@+id/sbutton_21"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@android:color/transparent"
-        android:foreground="@android:color/transparent"
-        android:onClick="tictactoe"
-        android:textColor="@color/ic_launcher_background"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
-
-    <Button
-        android:id="@+id/sbutton_22"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@android:color/transparent"
-        android:foreground="@android:color/transparent"
-        android:onClick="tictactoe"
-        android:textColor="@color/ic_launcher_background"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
-
-    <ImageView
         android:id="@+id/simage_00"
         android:layout_width="90dp"
         android:layout_height="90dp"
@@ -200,7 +53,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.371"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/simage_01"
@@ -211,7 +65,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.371"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/simage_02"
@@ -222,7 +77,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.371"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/simage_10"
@@ -233,7 +89,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
+        app:layout_constraintVertical_bias="0.589"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/simage_11"
@@ -244,7 +101,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
+        app:layout_constraintVertical_bias="0.589"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/simage_12"
@@ -255,7 +113,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
+        app:layout_constraintVertical_bias="0.589"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/simage_20"
@@ -266,7 +125,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
+        app:layout_constraintVertical_bias="0.803"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/simage_21"
@@ -277,7 +137,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
+        app:layout_constraintVertical_bias="0.803"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/simage_22"
@@ -288,6 +149,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
+        app:layout_constraintVertical_bias="0.803"
+        tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
